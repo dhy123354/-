@@ -1,0 +1,452 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>JoDice</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="assets/images/fav.png" type="image/gif" sizes="64x64">
+
+<!-- CSS
+================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link href="assets/css/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/select2.min.css" rel="stylesheet" />
+<link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/color-1.css">
+</head>
+<body>
+
+<!-- Header 01
+================================================== -->
+<header class="header_01 header_inner">
+  <div class="header_main">
+    <div class="header_menu fixed-top">
+      <div class="container">
+        <div class="header_top">
+          <div class="logo">
+            <a href="index.html">
+              <img alt="JoDice" class="img-fluid" src="assets/images/dice-logo.png">
+            </a>
+          </div>
+          <div class="navigation">
+            <nav>
+              <div class="hamburger hamburger--spring js-hamburger ">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
+              <ul>
+                <li>
+                  <a href="index.html" >主页</a>
+                </li>
+                <li class="has-sub-menu current_page">
+                  <a href="index.html">求职者</a>
+                  <ul class="sub-menu">
+                    <li class="current_page"> 
+                      <a href="browse-jobs.html">浏览职位</a>
+                    </li>
+                    
+                    <li>
+                      <a href="job-single.html">Job single</a>
+                    </li>
+                    <li>
+                      <a href="my-stared-jobs.html">My stared jobs</a>
+                    </li>
+                    <li>
+                      <a href="staff-profile-single.html">求职者简介</a>
+                    </li>
+                    <li>
+                      <a href="edit-profile.html">更新我的个人资料</a>
+                    </li>
+                    
+                    <li>
+                      <a href="edit-password.html">更改密码</a>
+                    </li>
+                    <li>
+                      <a href="registration.html">登记</a>
+                    </li>
+                    <li>
+                      <a href="browse-companies.html">浏览公司</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+
+                <li class="has-sub-menu ">
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+
+                    <li >
+                      <a href="blog.html">blog</a>
+                    </li>
+                    <li>
+                      <a href="blog-single.html">Blog single</a>
+                    </li>
+                    <li>
+                      <a href="contact-us.html">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="plan-page.html">Membership Plans</a>
+                    </li>
+                    <li>
+                      <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                      <a href="lost-password.html">Lost password</a>
+                    </li>
+                    <li>
+                      <a href="user-interface-elements.html">User interface elements</a>
+                    </li>
+                    <li>
+                      <a href="404.html">404</a>
+                    </li> 
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="ac_nav after_login_ac_nav">
+              <!--logedin-->
+                <div class="login_pop after_login">
+                  <button class="btn btn-primary withdp"><img alt=""  src="assets/images/profile-5.png"> 嗨 西蒙斯  <i class="fas fa-caret-down"></i></button>
+                  <div class="login_pop_box login_pop_box_menu">
+                    <div class="login_pop_box_head">
+                      <div class=" ">
+                        <img alt=""  src="assets/images/profile-5.png">
+                        <span>伦敦，英国</span>
+                        <h5>西蒙斯</h5>
+                        <h6>Magento 认证开发人员</h6>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="browse-jobs.html"><i class="fas fa-search"></i> 浏览工作 </a>
+                      </li>
+                      <li>
+                        <a href="my-stared-jobs.html"><i class="fas fa-star"></i> 查看我关注的工作</a>
+                      </li>
+                      <li>
+                        <a href="edit-profile.html"><i class="fas fa-user"></i> 更新我的个人资料</a>
+                      </li>
+                      <li>
+                        <a href="edit-password.html"><i class="fas fa-key"></i>更改密码</a>
+                      </li>
+                      <li>
+                        <a href="edit-password.html"><i class="fas fa-power-off"></i> 退出登录</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="login_pop after_login">
+                  <button class="btn btn-msg">
+                    <i class="fas fa-envelope"></i>
+                    <span class="msg-count">2</span>
+                   </button>
+                  <div class="login_pop_box job_seekernotifi ">
+                      <h6>收件箱</h6>
+                      <ul>
+                        <li><img alt=""   src="assets/images/c-logo-02.webp"><a href="#"> 感谢您申请这份工作，我们的人力资源团队会尽快与您联系</a> </li>
+                        <li><img alt=""   src="assets/images/profile-5.png"><a href="#">您更新了个人资料图片 .</a> </li>
+                      </ul>
+                  </div>
+                </div>
+              <!--end logedin-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_btm">
+      <h2>浏览工作</h2>
+    </div>
+  </div> 
+</header>
+
+
+
+<!-- Main 
+================================================== -->
+<main>
+  <div class="job_container">
+    <div class="container">
+      <div class="row job_main">
+        <div class="sidebar">
+          <ul class="user_navigation">
+            <li class="is-active">
+              <a href="browse-jobs.html"><i class="fas fa-search"></i> 浏览工作 </a>
+              <a class="filter_btn" href="#sidebar_filter_option"> 
+                <i class="fas fa-filter"></i>
+                <i class="fas fa-times"></i>
+              </a>
+            </li>
+            <li>
+            <form id="#sidebar_filter_option" class="filter_option">
+              <div class="form-group">
+                <label>地点</label>
+                <div class="field">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select class="js-example-basic-single" name="state">
+                      <option value="AL">北京</option>
+                      <option value="WY">天津</option>
+                    </select>
+                </div>
+              </div>  
+              <div class="form-group">
+                <label>关键词</label>
+                <div class="field">
+                    <i class="fas fa-briefcase"></i>
+                    <select class="js-example-basic-single" name="state">
+                      <option value="AL">例如职称</option>
+                      <option value="WY">标题 1</option>
+                      <option value="WY">标题 2</option>
+                      <option value="WY">标题 3</option>
+                    </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>类别</label>
+                <div class="field">
+                    <i class="fas fa-briefcase"></i>
+                    <select class="js-example-basic-single" name="state">
+                      <option>管理员支持</option>
+                      <option>管理员支持</option>
+                      <option>数据分析</option>
+                      <option>设计与创意</option>
+                      <option>法律</option>
+                      <option>软件开发</option>
+                      <option>信息技术与网络</option>
+                      <option>写作</option>
+                      <option>翻译</option>
+                      <option>销售与市场营销</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>薪水</label>
+                <div class="field">
+                  <input type="text" placeholder="e.g. 10k" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>标签</label>
+                <div class="field">
+                  <div class="form-group custom_checkboxes">
+                    <label class="custom_checkbox" for="tag-1">
+                      <input type="checkbox" name="usertype" id="tag-1" value="job seeker">
+                      <span><i class="fas fa-check"></i>PHP</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-2">
+                      <input type="checkbox" name="usertype" id="tag-2" value="employer">
+                      <span><i class="fas fa-check"></i> MySQL</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-3">
+                      <input type="checkbox" name="usertype" id="tag-3" value="employer">
+                      <span><i class="fas fa-check"></i> API</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-4">
+                      <input type="checkbox" name="usertype" id="tag-4" value="employer">
+                      <span><i class="fas fa-check"></i> react</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-5">
+                      <input type="checkbox" name="usertype" id="tag-5" value="employer">
+                      <span><i class="fas fa-check"></i> design</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+            </li>
+        </ul>
+        <h5>组织和管理</h5>
+        <ul class="user_navigation">
+            <li>
+              <a href="my-stared-jobs.html"><i class="fas fa-star"></i> View My Stared Jobs</a>
+            </li>
+        </ul>
+        <h5>帐户</h5>
+        <ul class="user_navigation">
+            <li>
+              <a href="edit-profile.html"><i class="fas fa-user"></i> 更新我的个人资料</a>
+            </li>
+            <li>
+              <a href="edit-password.html"><i class="fas fa-key"></i> 更改密码</a>
+            </li>
+            <li>
+              <a href="edit-password.html"><i class="fas fa-power-off"></i> 退出登录</a>
+            </li>
+          </ul>
+        </div>
+        <div class=" job_main_right">
+          <div class="jm_headings">
+              <h5>浏览列表中的工作</h5>
+          </div>
+          <div class="row full_width featured_box_outer">
+            <div class="col-sm-12">
+              <div class="featured_box ">
+                <div class="fb_image">
+                  <img  alt="brand logo" src="assets/images/c-logo-02.webp">
+                </div>
+                <div class="fb_content">
+                  <h4>123_Restaurant General Manager</h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-landmark"></i>
+                        Magna Aliqua
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        New York
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="far fa-clock"></i>
+                        2 days ago
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fb_action">
+                  <a title="add to favourite" href="#"><i class="far fa-heart"></i></a>
+                  <a class="btn btn-primary" href="#">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <!--<div class="col-sm-12">
+              <div class="featured_box ">
+                <div class="fb_image">
+                  <img  alt="brand logo" src="assets/images/c-logo-05.webp">
+                </div>
+                <div class="fb_content">
+                  <h4>Restaurant General Manager</h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-landmark"></i>
+                        Magna Aliqua
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        New York
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="far fa-clock"></i>
+                        3 days ago
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fb_action">
+                  <a title="add to favourite" href="#"><i class="fas fa-heart"></i></a>
+                  <a class="btn btn-primary" href="#">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="featured_box ">
+                <div class="fb_image">
+                  <img  alt="brand logo" src="assets/images/c-logo-01.webp">
+                </div>
+                <div class="fb_content">
+                  <h4>Restaurant General Manager</h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-landmark"></i>
+                        Magna Aliqua
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        New York
+                      </a>
+                      </li><li>
+                      <a href="#">
+                        <i class="far fa-clock"></i>
+                        5 days ago
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="fb_action">
+                  <a title="add to favourite" href="#"><i class="far fa-heart"></i></a>
+                  <a class="btn btn-primary disabled" href="#">Applied</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="featured_box ">
+                <div class="fb_image">
+                  <img   alt="brand logo" src="assets/images/c-logo-03.webp">
+                </div>
+                <div class="fb_content">
+                  <h4>Restaurant General Manager</h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-landmark"></i>
+                        Magna Aliqua
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        New York
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="far fa-clock"></i>
+                        5 days ago
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fb_action">
+                  <a title="add to favourite" href="#"><i class="far fa-heart"></i></a>
+                  <a class="btn btn-primary" href="#">Apply Now</a>
+                </div>
+              </div>
+            </div>-->
+          </div>
+          <div class="section-divider">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- End Footer Container
+================================================== -->
+
+<!-- Scripts
+================================================== -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

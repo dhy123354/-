@@ -1,0 +1,217 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>JoDice</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="assets/images/fav.png" type="image/gif" sizes="64x64">
+
+<!-- CSS
+================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link href="assets/css/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/select2.min.css" rel="stylesheet" />
+<link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/color-1.css">
+</head>
+<body>
+
+<!-- Header 01
+================================================== -->
+<header class="header_01 header_inner">
+  <div class="header_main">
+    <div class="header_menu fixed-top">
+      <div class="container">
+        <div class="header_top">
+          <div class="logo">
+            <a href="index.html">
+              <img alt="JoDice" class="img-fluid" src="assets/images/dice-logo.png">
+            </a>
+          </div>
+          <div class="navigation">
+            <nav>
+              <div class="hamburger hamburger--spring js-hamburger ">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <ul>
+                <li >
+                  <a href="index.html" >首页</a>
+                </li>
+                <li class="has-sub-menu current_page">
+                  <a href="index.html">求职者</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="job-seeker-dashboard.html">求职者主页</a>
+                    </li>
+                    <li class="current_page">
+                      <a href="browse-jobs.html">浏览工作</a>
+                    </li>
+
+                    <li>
+                      <a href="job-single.html">浏览职位</a>
+                    </li>
+                    <li>
+                      <a href="my-stared-jobs.html">关注的职位</a>
+                    </li>
+                    <li>
+                      <a href="staff-profile-single.html">求职简历</a>
+                    </li>
+                    <li>
+                      <a href="edit-profile.html">编辑简历</a>
+                    </li>
+
+                    <li>
+                      <a href="edit-password.html">修改密码</a>
+                    </li>
+                    <li>
+                      <a href="registration.html">登录/注册</a>
+                    </li>
+                    <li>
+                      <a href="browse-companies.html">浏览公司</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="has-sub-menu current_page">
+                  <a href="index.html">求职者</a>
+                  <ul class="sub-menu">
+                    <li class="current_page">
+                      <a href="browse-jobs.html">浏览职位</a>
+                    </li>
+
+                    <li>
+                      <a href="job-single.html">Job single</a>
+                    </li>
+                    <li>
+                      <a href="my-stared-jobs.html">My stared jobs</a>
+                    </li>
+                    <li>
+                      <a href="staff-profile-single.html">求职者简介</a>
+                    </li>
+                    <li>
+                      <a href="edit-profile.html">更新我的个人资料</a>
+                    </li>
+
+                    <li>
+                      <a href="edit-password.html">更改密码</a>
+                    </li>
+                    <li>
+                      <a href="registration.html">登记</a>
+                    </li>
+                    <li>
+                      <a href="browse-companies.html">浏览公司</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </nav>
+            <div class="ac_nav">
+              <!--Not logedin-->
+              <div class="login_pop">
+                <button class="btn btn-primary">登录 / 注册 <i class="fas fa-caret-down"></i></button>
+                <div class="login_pop_box">
+                    <span class="twobtn_cont">
+                      <a class=" signjs_btn" href="registration.html">
+                      <span>求职者</span> 注册
+                      <i class="far fa-user"></i>
+                      </a>
+                    <a class=" signrs_btn" href="emp-registration.html"> <span>EMPLOYERS</span> 注册
+                      <i class="fas fa-landmark"></i>
+                    </a>
+                    </span>
+                  <div>
+                    <span class="member_btn">已 是 会 员?</span>
+                    <a class="lgin_btn btn btn-primary" href="login.html">
+                      登录
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--end logedin-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_btm">
+      <h2>注册</h2>
+    </div>
+  </div>
+</header>
+
+<!-- Main 
+================================================== -->
+<main>
+  <div class="only-form-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        	<div class="only-form-box">		
+            <div class="welcome-text text-center mb-5">
+              <h5 class="mb-0">创建一个帐户！</h5>
+              <span>已经有账户？ <a href="login.html">登录!</a></span>
+            </div>
+				<form>
+					<div class="com_class_form">
+						<div class="form-group user_type_cont">
+              <label class="user_type" for="usertype-1">
+                <input type="radio" checked="" name="usertype" id="usertype-1" value="job seeker" >
+                <span><i class="far fa-user"></i> 求职者</span>
+              </label>
+              <label class="user_type" for="usertype-2">
+                <input type="radio" name="usertype" id="usertype-2" value="employer" >
+                <span><i class="fas fa-landmark"></i>  雇主</span>
+              </label>
+            </div>
+            <div class="form-group">
+							<input class="form-control" type="email" size="40" placeholder="邮箱地址* ">
+						</div>
+            <div class="form-group">
+              <input class="form-control" type="text"  size="40" placeholder="用户名 ">
+            </div>
+						<div class="form-group">
+							<input class="form-control" type="password" placeholder=" 密码 * ">
+						</div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="重复输入密码 * ">
+            </div>
+
+						
+						<div class="form-group">
+							<input class="btn btn-primary" type="submit" value="注册" >
+						</div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> 记住密码
+              </label>
+            </div>
+            
+					</div>
+				</form>
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- Scripts
+================================================== -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

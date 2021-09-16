@@ -1,0 +1,536 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>JoDice</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="assets/images/fav.png" type="image/gif" sizes="64x64">
+
+<!-- CSS
+================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link href="assets/css/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link href="assets/css/select2.min.css" rel="stylesheet" />
+<link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/color-1.css">
+</head>
+<body>
+
+<!-- Header 01
+================================================== -->
+<header class="header_01 header_inner">
+  <div class="header_main">
+    <div class="header_menu fixed-top">
+      <div class="container">
+        <div class="header_top">
+          <div class="logo">
+            <a href="index.html">
+              <img alt="JoDice" class="img-fluid" src="assets/images/dice-logo.png">
+            </a>
+          </div>
+          <div class="navigation">
+            <nav>
+              <div class="hamburger hamburger--spring js-hamburger ">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
+              <ul>
+                <li>
+                  <a href="index.html" >主页</a>
+                </li>
+                <li class="has-sub-menu">
+                  <a href="#">H R</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="job-dashboard.html">工作指示板</a>
+                    </li>
+                    <li>
+                      <a href="post-a-job.html">发布工作</a>
+                    </li>
+                    <li>
+                      <a href="my-job-listing.html">我的工作列表</a>
+                    </li>
+                    <li>
+                      <a href="find-staff.html">收到的简历</a>
+                    </li>
+                    <li>
+                      <a href="compnay-profile-single.html">公司简历</a>
+                    </li>
+
+                    <li>
+                      <a href="emp-edit-profile.html">修改个人信息</a>
+                    </li>
+                    <li>
+                      <a href="emp-edit-password.html">修改密码</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="ac_nav after_login_ac_nav">
+              <!-- logedin-->
+                <div class="login_pop after_login">
+                  <button class="btn btn-primary withdp"><img alt="" src="assets/images/c-logo-03.webp"> Donec Software   <i class="fas fa-caret-down"></i></button>
+                  <div class="login_pop_box login_pop_box_menu">
+                    <div class="login_pop_box_head">
+                      <div class=" ">
+                        <img alt="" src="assets/images/c-logo-03.webp">
+                        <span> New York, London </span>
+                        <h5>Donec Software </h5>
+                        <h6>&nbsp;</h6>
+                      </div>
+                    </div>
+                    <ul class="user_navigation">
+                        <li>
+                          <a href="find-staff.html"><i class="fas fa-search"></i>收到的简历</a>
+                        </li>
+                        <li>
+                          <a href="post-a-job.html"><i class="fas fa-paper-plane"></i> 发布招聘</a>
+                        </li>
+                        <li>
+                          <a href="job-dashboard.html"><i class="far fa-list-alt"></i> 我的工作清单</a>
+                        </li>
+
+                        <li>
+                          <a href="emp-edit-profile.html"><i class="fas fa-user"></i> 更新我的资料</a>
+                        </li>
+                        <li>
+                          <a href="emp-edit-password.html"><i class="fas fa-key"></i>修改密码</a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fas fa-power-off"></i> 注销</a>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="login_pop after_login">
+                  <button class="btn btn-msg">
+                    <i class="fas fa-envelope"></i>
+                    <span class="msg-count">2</span>
+                   </button>
+                  <div class="login_pop_box job_seekernotifi ">
+                      <h6>Inbox</h6>
+                      <ul>
+                        <li><img alt="" src="assets/images/profile-1.png"><a href="#"> John Stone applying this job  contact  </a> </li>
+                        <li><img alt="" src="assets/images/profile-2.png"><a href="#">Nguta Ithya  applying this job  contact  </a> </li>
+                        <li><img alt="" src="assets/images/profile-4.png"><a href="#">Salome Simoes applying this job</a> </li>
+                      </ul>
+                  </div>
+                </div>
+              <!--end logedin-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_btm">
+      <h2>简历管理</h2>
+    </div>
+  </div>
+</header>
+
+
+<!-- End Header 02
+================================================== -->
+
+
+
+<!-- Main
+================================================== -->
+<main>
+  <div class="job_container">
+    <div class="container">
+      <div class="row job_main">
+        <div class="sidebar">
+
+          <ul class="user_navigation">
+            <li class="is-active" >
+              <a href="find-staff.html"><i class="fas fa-search"></i> 收到的简历 </a>
+              <a class="filter_btn" href="#sidebar_filter_option">
+                <i class="fas fa-filter"></i>
+                <i class="fas fa-times"></i>
+              </a>
+            </li>
+            <li>
+            <form id="#sidebar_filter_option" class="filter_option">
+              <div class="form-group">
+                <label>投递职位</label>
+                <div class="field">
+                  <i class="fas fa-briefcase"></i>
+                    <select class="js-example-basic-single" name="state">
+                      <option value="AL">Java工程师</option>
+                      <option value="WY">前段工程师</option>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group">
+              <label>工作经验</label>
+              <div class="field">
+                <i class="fas fa-calendar-check"></i>
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">工作经验不限</option>
+                  <option value="AL">无经验</option>
+                  <option value="WY">应届生</option>
+                  <option value="WY">1年-3年</option>
+                  <option value="WY">3年以上</option>
+                </select>
+              </div>
+            </div>
+              <div class="form-group">
+                <label>性别</label>
+                <div class="field">
+                  <i class="fas fa-user"></i>
+                  <select class="js-example-basic-single" name="state">
+                    <option value="AL">性别不限</option>
+                    <option value="AL">男</option>
+                    <option value="WY">女</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>年龄</label>
+                <div class="field">
+                  <i class="fas fa-user"></i>
+                  <select class="js-example-basic-single" name="state">
+                    <option value="AL">年龄不限</option>
+                    <option value="AL">16-20岁</option>
+                    <option value="WY">21-30岁</option>
+                    <option value="WY">31-40岁</option>
+                    <option value="WY">41-50岁</option>
+                    <option value="WY">51岁以上</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>学历</label>
+                <div class="field">
+                    <i class="fas fa-briefcase"></i>
+                    <select class="js-example-basic-single" name="state">
+                      <option>学历不限</option>
+                      <option>高中/中专/技校</option>
+                      <option>大专</option>
+                      <option>本科</option>
+                      <option>硕士</option>
+                      <option>博士</option>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>简历分组</label>
+                <div class="field">
+                    <i class="fas fa-briefcase"></i>
+                    <select class="js-example-basic-single" name="state">
+                      <option>分组不限</option>
+                      <option>收藏夹</option>
+                      <option>回收站</option>
+                      <option>未分组</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>查找关键字</label>
+                <div class="field">
+                  <input type="text" placeholder="e.g. 张三" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Tags</label>
+                <div class="field">
+                  <div class="form-group custom_checkboxes">
+                    <label class="custom_checkbox" for="tag-1">
+                      <input type="checkbox" name="usertype" id="tag-1" value="job seeker">
+                      <span><i class="fas fa-check"></i>PHP</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-2">
+                      <input type="checkbox" name="usertype" id="tag-2" value="employer">
+                      <span><i class="fas fa-check"></i> MySQL</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-3">
+                      <input type="checkbox" name="usertype" id="tag-3" value="employer">
+                      <span><i class="fas fa-check"></i> API</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-4">
+                      <input type="checkbox" name="usertype" id="tag-4" value="employer">
+                      <span><i class="fas fa-check"></i> react</span>
+                    </label>
+                    <label class="custom_checkbox" for="tag-5">
+                      <input type="checkbox" name="usertype" id="tag-5" value="employer">
+                      <span><i class="fas fa-check"></i> design</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+            </li>
+            <li  >
+              <a href="job-dashboard.html">
+                <i class="fas fa-border-all"></i> Job Dashboard </a>
+              </li>
+          </ul>
+          <h5>Organize and Manage</h5>
+          <ul class="user_navigation">
+              <li >
+              <a href="post-a-job.html"><i class="fas fa-paper-plane"></i> Post Job</a>
+              </li>
+              <li>
+                <a href="my-job-listing.html"><i class="far fa-list-alt"></i> My job listings</a>
+              </li>
+
+
+          </ul>
+          <h5>Account</h5>
+          <ul class="user_navigation">
+            <li>
+                <a href="emp-edit-profile.html"><i class="fas fa-user"></i> Update My Profile</a>
+              </li>
+              <li >
+                <a href="emp-edit-password.html"><i class="fas fa-key"></i>Change Password</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-power-off"></i> Logout</a>
+              </li>
+          </ul>
+        </div>
+        <div class=" job_main_right">
+          <div class="row findstaf_section ">
+            <div class="col-sm-6">
+              <div class="staffBox">
+                <div class="staff_img">
+                  <img alt="" src="assets/images/profile-1.png">
+                </div>
+                <div class="staff_detail">
+                  <h3>Findy Sorest <img alt="" src="assets/images/au.svg"></h3>
+                  <p>Java工程师</p>
+                  <ul>
+                    <li>
+                      <h6>地址</h6>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>北京</span>
+                    </li>
+                    <li>
+                      <h6>工作经验</h6>
+                      <i class="fas fa-calendar-check"></i>
+                      <span>5 Years</span>
+                    </li>
+                    <li>
+                      <h6>年龄</h6>
+                      <i class="fas fa-user"></i>
+                      <span>26</span>
+                    </li>
+                  </ul>
+                  <div class="staffBox_action">
+                    <a  class="btn btn-third" href="staff-profile-single.html">简历详情</a>
+                    <a  class="btn btn-third" style="background: #117a8b" href="staff-profile-single.html">收藏</a>
+                    <a  class="btn btn-third" style="background: #721c24" href="staff-profile-single.html">回收站</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="staffBox">
+                <div class="staff_img">
+                  <img alt="" src="assets/images/profile-2.png">
+                </div>
+                <div class="staff_detail">
+                  <h3>Dedolp Seofls <img alt="" src="assets/images/au.svg"></h3>
+                  <p>Java工程师</p>
+                  <ul>
+                    <li>
+                      <h6>地址</h6>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>北京</span>
+                    </li>
+                    <li>
+                      <h6>工作经验</h6>
+                      <i class="fas fa-calendar-check"></i>
+                      <span>5 Years</span>
+                    </li>
+                    <li>
+                      <h6>年龄</h6>
+                      <i class="fas fa-user"></i>
+                      <span>26</span>
+                    </li>
+                  </ul>
+                  <div class="staffBox_action">
+                    <a  class="btn btn-third" href="staff-profile-single.html">简历详情</a>
+                        <a  class="btn btn-third" style="background: #117a8b" href="staff-profile-single.html">收藏</a>
+                        <a  class="btn btn-third" style="background: #721c24" href="staff-profile-single.html">回收站</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="staffBox">
+                <div class="staff_img">
+                  <img alt="" src="assets/images/profile-3.png">
+                </div>
+                <div class="staff_detail">
+                  <h3>Dedolp Seofls <img alt="" src="assets/images/au.svg"></h3>
+                  <p>Java工程师</p>
+                  <ul>
+                    <li>
+                      <h6>地址</h6>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>北京</span>
+                    </li>
+                    <li>
+                      <h6>工作经验</h6>
+                      <i class="fas fa-calendar-check"></i>
+                      <span>5 Years</span>
+                    </li>
+                    <li>
+                      <h6>年龄</h6>
+                      <i class="fas fa-user"></i>
+                      <span>26</span>
+                    </li>
+                  </ul>
+                  <div class="staffBox_action">
+                    <a  class="btn btn-third" href="staff-profile-single.html">简历详情</a>
+                    <a  class="btn btn-third" style="background: #117a8b" href="staff-profile-single.html">收藏</a>
+                    <a  class="btn btn-third" style="background: #721c24" href="staff-profile-single.html">回收站</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="staffBox">
+                <div class="staff_img">
+                  <img alt="" src="assets/images/profile-4.png">
+                </div>
+                <div class="staff_detail">
+                  <h3>Dedolp Seofls <img alt="" src="assets/images/au.svg"></h3>
+                  <p>Java工程师</p>
+                  <ul>
+                    <li>
+                      <h6>地址</h6>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>北京</span>
+                    </li>
+                    <li>
+                      <h6>工作经验</h6>
+                      <i class="fas fa-calendar-check"></i>
+                      <span>5 Years</span>
+                    </li>
+                    <li>
+                      <h6>年龄</h6>
+                      <i class="fas fa-user"></i>
+                      <span>26</span>
+                    </li>
+                  </ul>
+                  <div class="staffBox_action">
+                    <a  class="btn btn-third" href="staff-profile-single.html">简历详情</a>
+                    <a  class="btn btn-third" style="background: #117a8b" href="staff-profile-single.html">收藏</a>
+                    <a  class="btn btn-third" style="background: #721c24" href="staff-profile-single.html">回收站</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="staffBox">
+                <div class="staff_img">
+                  <img alt="" src="assets/images/profile-5.png">
+                </div>
+                <div class="staff_detail">
+                  <h3>Dedolp Seofls <img alt="" src="assets/images/au.svg"></h3>
+                  <p>Java工程师</p>
+                  <ul>
+                    <li>
+                      <h6>地址</h6>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>北京</span>
+                    </li>
+                    <li>
+                      <h6>工作经验</h6>
+                      <i class="fas fa-calendar-check"></i>
+                      <span>5 Years</span>
+                    </li>
+                    <li>
+                      <h6>年龄</h6>
+                      <i class="fas fa-user"></i>
+                      <span>26</span>
+                    </li>
+                  </ul>
+                  <div class="staffBox_action">
+                    <a  class="btn btn-third" href="staff-profile-single.html">简历详情</a>
+                    <a  class="btn btn-third" style="background: #117a8b" href="staff-profile-single.html">收藏</a>
+                    <a  class="btn btn-third" style="background: #721c24" href="staff-profile-single.html">回收站</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="staffBox">
+                <div class="staff_img">
+                  <img alt="" src="assets/images/profile-6.png">
+                </div>
+                <div class="staff_detail">
+                  <h3>Dedolp Seofls <img alt="" src="assets/images/au.svg"></h3>
+                  <p>Java工程师</p>
+                  <ul>
+                    <li>
+                      <h6>地址</h6>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>北京</span>
+                    </li>
+                    <li>
+                      <h6>工作经验</h6>
+                      <i class="fas fa-calendar-check"></i>
+                      <span>5 Years</span>
+                    </li>
+                    <li>
+                      <h6>年龄</h6>
+                      <i class="fas fa-user"></i>
+                      <span>26</span>
+                    </li>
+                  </ul>
+                  <div class="staffBox_action">
+                    <a  class="btn btn-third" href="staff-profile-single.html">简历详情</a>
+                    <a  class="btn btn-third" style="background: #117a8b" href="staff-profile-single.html">收藏</a>
+                    <a  class="btn btn-third" style="background: #721c24" href="staff-profile-single.html">回收站</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+has-sub-menu
+
+<!-- Footer Container
+================================================== -->
+<footer id="colophon" class="site-footer custom_footer dark_footer">
+  <div class="container">
+
+    <!-- .site-info -->
+  </div>
+</footer>
+
+
+<!-- End Footer Container
+================================================== -->
+
+<!-- Scripts
+================================================== -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
